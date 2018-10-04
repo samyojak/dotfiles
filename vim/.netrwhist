@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/ranjan/Documents/projects/code/models'
+let g:netrw_dirhist_2='/home/ranjan/Documents/projects/code'
+let g:netrw_dirhist_3='/home/ranjan/Documents/projects'
+let g:netrw_dirhist_4='/home/ranjan/Documents'
+let g:netrw_dirhist_5='/home/ranjan'
+let g:netrw_dirhist_6='/home'
+let g:netrw_dirhist_7='/'
+let g:netrw_dirhist_8='/home/ranjan/Desktop'
+let g:netrw_dirhist_9='/home/ranjan/Desktop/code/repo-ml/BAE/A6/Graph_features'

@@ -1,1 +1,34 @@
-okay
+filetype on
+syntax on
+set number
+filetype indent on
+set smartindent
+set autoindent
+set showmatch
+set showcmd
+set wildmenu
+set lazyredraw
+
+execute pathogen#infect()
+autocmd vimenter * NERDTree
+autocmd VimEnter * wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+nnoremap gV `[v`]
+
+" toggle gundo
+nnoremap <leader>u :GundoToggle<CR>
+nnoremap <C-o> :NERDTreeToggle<CR>
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
+
+"let NERDTreeMinimalUI = 1
+"let NERDTreeDirArrows = 1
